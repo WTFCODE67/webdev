@@ -1,0 +1,273 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.links a {
+  text-decoration: none;
+  text-align: center;
+  position: sticky;
+  margin: 0 10px;
+  color: white;
+}
+.icons img {
+  width: 28px;
+  margin: 10px;
+}
+.card {
+  width: 200px;
+  height: 254px;
+  border-radius: 20px;
+  background: #212121;
+  position: relative;
+}
+
+.cards {
+  /* display: flex; */
+  display: grid;
+  margin: 0;
+  place-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.text {
+  position: absolute;
+  bottom: -4.5rem;
+  color: white;
+}
+.text p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.add {
+  width: 25px;
+  margin-left: 65px;
+}
+#bottone1 {
+  border-radius: 8px;
+  background: #3cff4f;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 14vw;
+  height: 4.5vh;
+  position: absolute;
+  bottom: -40px;
+}
+
+#bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #3cff4f;
+}
+
+#bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #3cff4f;
+}
+#bottone1 p {
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+.new {
+  background: linear-gradient(
+    90deg,
+    rgba(60, 255, 79, 1) 0%,
+    rgba(46, 46, 46, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  background-size: 100%;
+  background-position: 0 0;
+  font-size: 33px;
+  padding: 0;
+
+  margin: 0;
+  margin-left: 50px;
+}
+.view {
+  position: absolute;
+  right: 0;
+  margin-right: 85px;
+  margin-top: 10px;
+}
+.view a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.num {
+  color: #3cff4f;
+  font-weight: 500;
+}
+.ven {
+  color: #7f7f7f;
+  font-weight: bold;
+}
+.random {
+  width: 200px;
+  height: 254px;
+  border-radius: 20px;
+}
+.random img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .nav-container{
+    display: none;
+  }
+  .desktop-nav{
+    display: flex;
+
+  }
+  
+   
+  /* .cards{
+    gap: 80px;
+ }
+ .card{
+   margin-bottom: 7rem;
+   width: 250px;
+   height: 250px;
+ }
+ .random{
+   width: 250px;
+   height: 250px;
+ }
+ .text p{
+   font-size: 1.5rem;
+   white-space: nowrap;
+ }
+ .text{
+   bottom: -7rem;
+ }
+ #bottone1{
+   bottom: -60px;
+   width: 16rem;
+ }
+ .add{
+   width: 40px;
+ }*/
+} 
+@media screen and (max-device-width: 1000px) {
+  .nav-container{
+    display: flex;
+  }
+  .desktop-nav{
+    display: none;
+  }
+
+}
+/* Tablet */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cards{
+     gap: 80px;
+  }
+  .card{
+    margin-bottom: 7rem;
+    width: 250px;
+    height: 250px;
+  }
+  .random{
+    width: 250px;
+    height: 250px;
+  }
+  .text p{
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  .text{
+    bottom: -7rem;
+  }
+  #bottone1{
+    bottom: -60px;
+    width: 16rem;
+  }
+  .add{
+    width: 40px;
+  }
+}
+
+/* Mobile portrait  */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .cards{
+    gap: 80px;
+ }
+ .card{
+   margin-bottom: 7rem;
+   width: 250px;
+   height: 250px;
+ }
+ .random{
+   width: 250px;
+   height: 250px;
+ }
+ .text p{
+   font-size: 1.5rem;
+   white-space: nowrap;
+ }
+ .text{
+   bottom: -7rem;
+ }
+ #bottone1{
+   bottom: -60px;
+   width: 16rem;
+ }
+ .add{
+   width: 40px;
+ }
+ .view{
+  margin-top: 3px;
+  margin-right: 40px;
+ }
+ .new{
+  margin-left: 20px;
+  font-size: 30px;
+ }
+ .view a{
+  font-size: 20px;
+ }
+}
+
+/* Mobile landscape */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .cards{
+    gap: 80px;
+ }
+ .card{
+   margin-bottom: 7rem;
+   width: 250px;
+   height: 250px;
+ }
+ .random{
+   width: 250px;
+   height: 250px;
+ }
+ .text p{
+   font-size: 1.5rem;
+   white-space: nowrap;
+ }
+ .text{
+   bottom: -7rem;
+ }
+ #bottone1{
+   bottom: -60px;
+   width: 16rem;
+ }
+ .add{
+   width: 40px;
+ }
+}
